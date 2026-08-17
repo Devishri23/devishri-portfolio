@@ -1,0 +1,107 @@
+/* General Styling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* ================= HERO ================= */
+
+.hero-section {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #1d2671, #c33764);
+
+    color: white;
+
+    padding-top: 70px;
+}
+
+.hero-section h1 {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.hero-section span {
+    color: #ffd700;
+}
+
+
+/* ================= ABOUT ================= */
+
+#about {
+    background-color: #f8f9fa;
+}
+
+.skill-box {
+    display: inline-block;
+
+    background-color: #212529;
+    color: white;
+
+    padding: 10px 18px;
+
+    margin: 5px;
+
+    border-radius: 20px;
+}
+
+
+/* ================= PROJECTS ================= */
+
+.projects-section {
+    background-color: #ffffff;
+}
+
+.project-card {
+    border: none;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* ================= CONTACT ================= */
+
+#contact {
+    background-color: #f8f9fa;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .hero-section h1 {
+        font-size: 40px;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+    }
+
+}
+
+/* Project Screenshot */
+
+.project-screenshot {
+    max-width: 550px;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+}
