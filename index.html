@@ -8,7 +8,10 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -43,6 +46,10 @@
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
                 </li>
 
@@ -51,7 +58,11 @@
                 </li>
 
             </ul>
-
+            <div class="theme-toggle">
+                <button id="themeToggle" title="Toggle Dark Mode">
+                <i class="bi bi-moon-fill"></i>
+                </button>
+            </div>
         </div>
     </div>
 </nav>
@@ -63,14 +74,18 @@
 
     <div class="container text-center">
 
-        <h1>Hello, I'm <span>Devishri</span></h1>
+        <h1>Hello, I'm <span>Devishri Motekar</span></h1>
 
         <p class="lead">
             Web Developer | Java Developer | Full Stack Developer
         </p>
 
-        <a href="#projects" class="btn btn-primary btn-lg">
-            View My Projects
+        <p>
+            Welcome to my personal portfolio website.
+        </p>
+
+        <a href="#contact" class="btn btn-primary btn-lg">
+            Contact Me
         </a>
 
     </div>
@@ -80,76 +95,29 @@
 
 <!-- ================= ABOUT ================= -->
 
-<section id="about" class="py-5">
+<section id="about" class="about-section">
 
     <div class="container">
 
-        <h2 class="text-center mb-4">About Me</h2>
+        <h2>About Me</h2>
 
-        <div class="row align-items-center">
+        <div class="section-line"></div>
 
-            <div class="col-md-6">
+        <div class="about-content">
+            
+            <p>
+               I am currently pursuing my second year of MCA with a strong interest in 
+               the IT and software development field. I am passionate about learning new
+               technologies, developing practical solutions, and continuously enhancing
+               my technical and problem-solving skills.
+                
+            </p>
 
-                <h3>Who Am I?</h3>
-
-                <p>
-                    I am a passionate software developer interested in
-                    web development and full stack development.
-                    I enjoy creating responsive and user-friendly
-                    web applications.
-                </p>
-
-                <p>
-                    I am continuously learning new technologies and
-                    improving my programming skills.
-                </p>
-
-            </div>
-
-            <div class="col-md-6">
-
-    <h3>My Skills</h3>
-
-    <!-- Programming Languages -->
-    <h5 class="mt-4">Programming Languages</h5>
-    <div class="skill-box">C</div>
-    <div class="skill-box">C++</div>
-    <div class="skill-box">Java</div>
-    <div class="skill-box">Python</div>
-
-    <!-- Web Technologies -->
-    <h5 class="mt-4">Web Technologies</h5>
-    <div class="skill-box">HTML</div>
-    <div class="skill-box">CSS</div>
-    <div class="skill-box">JavaScript</div>
-    <div class="skill-box">Bootstrap</div>
-    <div class="skill-box">React.js</div>
-
-    <!-- Backend Technologies -->
-    <h5 class="mt-4">Backend Technologies</h5>
-    <div class="skill-box">Spring Boot</div>
-    <div class="skill-box">Spring MVC</div>
-    <div class="skill-box">Hibernate</div>
-
-    <!-- Core Concepts -->
-    <h5 class="mt-4">Core Concepts</h5>
-    <div class="skill-box">OOP</div>
-    <div class="skill-box">Data Structures & Algorithms</div>
-
-    <!-- Databases -->
-    <h5 class="mt-4">Databases</h5>
-    <div class="skill-box">MySQL</div>
-    <div class="skill-box">SQL Server</div>
-
-    <!-- Tools & IDEs -->
-    <h5 class="mt-4">Tools & IDEs</h5>
-    <div class="skill-box">Git</div>
-    <div class="skill-box">GitHub</div>
-    <div class="skill-box">IntelliJ IDEA</div>
-    <div class="skill-box">VS Code</div>
-    <div class="skill-box">Jupyter Notebook</div>
-
-</div>
+            <p>
+                My career goal is to build a strong and successful career in the IT industry, 
+                continuously improve my skills, work on real-world projects, and contribute 
+                to the growth and success of the organization.
+            </p>
 
         </div>
 
@@ -157,6 +125,87 @@
 
 </section>
 
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="skills-section">
+
+    <div class="container">
+
+        <h2>My Skills</h2>
+
+        <div class="section-line"></div>
+
+        <div class="skills-container">
+
+            <!-- Programming Languages -->
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+
+                <div class="skill-box">C</div>
+                <div class="skill-box">C++</div>
+                <div class="skill-box">Java</div>
+                <div class="skill-box">Python</div>
+            </div>
+
+
+            <!-- Web Technologies -->
+            <div class="skill-category">
+                <h3>Web Technologies</h3>
+
+                <div class="skill-box">HTML</div>
+                <div class="skill-box">CSS</div>
+                <div class="skill-box">JavaScript</div>
+                <div class="skill-box">Bootstrap</div>
+                <div class="skill-box">React.js</div>
+            </div>
+
+
+            <!-- Backend Technologies -->
+            <div class="skill-category">
+                <h3>Backend Technologies</h3>
+
+                <div class="skill-box">Spring Boot</div>
+                <div class="skill-box">Spring MVC</div>
+                <div class="skill-box">Hibernate</div>
+            </div>
+
+
+            <!-- Core Concepts -->
+            <div class="skill-category">
+                <h3>Core Concepts</h3>
+
+                <div class="skill-box">OOP</div>
+                <div class="skill-box">
+                    Data Structures & Algorithms
+                </div>
+            </div>
+
+
+            <!-- Databases -->
+            <div class="skill-category">
+                <h3>Databases</h3>
+
+                <div class="skill-box">MySQL</div>
+                <div class="skill-box">SQL Server</div>
+            </div>
+
+
+            <!-- Tools -->
+            <div class="skill-category">
+                <h3>Tools & IDEs</h3>
+
+                <div class="skill-box">Git</div>
+                <div class="skill-box">GitHub</div>
+                <div class="skill-box">IntelliJ IDEA</div>
+                <div class="skill-box">VS Code</div>
+                <div class="skill-box">Jupyter Notebook</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 <!-- ================= PROJECTS ================= -->
 
@@ -316,106 +365,52 @@
 
 </section>
 
-
 <!-- ================= CONTACT ================= -->
 
-<section id="contact" class="py-5">
+<section id="contact" class="contact-section">
 
     <div class="container">
 
-        <h2 class="text-center mb-4">
-            Contact Me
-        </h2>
+        <h2>Contact Me</h2>
 
-        <!-- Email Me Button -->
-        <div class="text-center mb-4">
+        <div class="section-line"></div>
 
-            <a href="mailto:deumotekar200902@gmail.com"
-               class="btn btn-outline-primary">
-                Email Me
+        <!-- Email -->
+        <p class="contact-email">
+            <strong>Email:</strong>
+            <a>
+                motekardy23@gmail.com
+            </a>
+
+        </p>
+
+        <!-- Social Links -->
+        <div class="social-links">
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/devishri-motekar-33b5ba380/"
+               target="_blank"
+               class="social-btn">
+                LinkedIn
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/Devishri23/"
+               target="_blank"
+               class="social-btn">
+                GitHub
             </a>
 
         </div>
 
-        <div class="row justify-content-center">
-
-            <div class="col-md-7">
-
-                <!-- Contact Form -->
-
-                <form id="contactForm">
-
-                    <!-- Name -->
-                    <div class="mb-3">
-
-                        <label class="form-label">
-                            Name
-                        </label>
-
-                        <input type="text"
-                               id="name"
-                               class="form-control"
-                               placeholder="Enter your name">
-
-                        <small id="nameError"
-                               class="text-danger"></small>
-
-                    </div>
-
-
-                    <!-- Email -->
-                    <div class="mb-3">
-
-                        <label class="form-label">
-                            Email
-                        </label>
-
-                        <input type="email"
-                               id="email"
-                               class="form-control"
-                               placeholder="Enter your email">
-
-                        <small id="emailError"
-                               class="text-danger"></small>
-
-                    </div>
-
-
-                    <!-- Message -->
-                    <div class="mb-3">
-
-                        <label class="form-label">
-                            Message
-                        </label>
-
-                        <textarea id="message"
-                                  class="form-control"
-                                  rows="5"
-                                  placeholder="Enter your message"></textarea>
-
-                        <small id="messageError"
-                               class="text-danger"></small>
-
-                    </div>
-
-
-                    <!-- Send Button -->
-                    <button type="submit"
-                            class="btn btn-primary">
-                        Send Message
-                    </button>
-
-
-                    <!-- Success Message -->
-                    <p id="successMessage"
-                       class="text-success mt-3"></p>
-
-                </form>
-
-            </div>
-
+        <!-- Send Email -->
+        <div class="social-links">
+            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=motekardy23@gmail.com"
+            target="_blank"
+            class="social-btn">
+            Email Me
+            </a>
         </div>
-
     </div>
 
 </section>

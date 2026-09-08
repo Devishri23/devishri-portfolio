@@ -36,10 +36,18 @@
             Devishri.
         </a>
 
-        <a href="index.html"
-           class="btn btn-outline-light">
-            ← Back to Portfolio
-        </a>
+        <div>
+            <button id="themeToggle"
+                    class="theme-btn"
+                    title="Toggle Dark Mode">
+                <i class="bi bi-moon-fill"></i>
+            </button>
+
+            <a href="index.html"
+               class="btn btn-outline-light">
+                Back to Portfolio
+            </a>
+        </div>
 
     </div>
 
@@ -59,7 +67,7 @@
         </p>
 
         <span class="ongoing-badge">
-            🚧 In Progress
+            In Progress
         </span>
 
     </div>
@@ -71,13 +79,13 @@
 
 <section class="py-5">
 
-    <div class="container">
+    < class="container">
 
         <!-- About Project -->
 
         <div class="project-card mb-4">
 
-            <h2>About the Project</h2>
+            <h3>About the Project</h3>
 
             <p>
                 Developing a full-stack Hotel Booking System
@@ -93,7 +101,7 @@
 
         <div class="project-card mb-4">
 
-            <h2>Technologies Used</h2>
+            <h3>Technologies Used</h3>
 
             <div class="project-tech">
 
@@ -115,73 +123,58 @@
 
         <div class="project-card mb-4">
 
-            <h2>Key Features</h2>
+            <h3>Features</h3>
 
-            <div class="row">
-
-                <div class="col-md-6">
-
-                    <ul class="feature-list">
+                        <ul class="feature-list">
 
                         <li>
-                            🔐 User Registration & Login
+                            User Registration & Login
                             with JWT Authentication
                         </li>
 
                         <li>
-                            👨‍💼 Role-Based Access —
+                            Role-Based Access —
                             Admin, Hotel Manager & Customer
                         </li>
 
                         <li>
-                            🏨 Hotel Management —
+                            Hotel Management —
                             Add, Update, Delete & View Hotels
                         </li>
 
                         <li>
-                            📍 Location & Facility Management
+                            Location & Facility Management
                         </li>
 
                         <li>
-                            ⭐ Hotel Reviews
+                            Hotel Reviews
                         </li>
 
-                    </ul>
-
-                </div>
-
-
-                <div class="col-md-6">
-
-                    <ul class="feature-list">
-
                         <li>
-                            📅 Hotel Booking &
+                            Hotel Booking &
                             Booking Status Management
                         </li>
 
                         <li>
-                            🗄️ MySQL Database Integration
+                            MySQL Database Integration
                         </li>
 
                         <li>
-                            🔒 BCrypt Password Encryption
+                            BCrypt Password Encryption
                         </li>
 
                         <li>
-                            🔗 REST APIs using Spring Boot
+                            REST APIs using Spring Boot
                         </li>
 
                         <li>
-                            ⚛️ React JS Frontend
+                            React JS Frontend
                             <strong>(In Development)</strong>
                         </li>
 
                     </ul>
 
                 </div>
-
-            </div>
 
         </div>
 
@@ -190,7 +183,7 @@
 
         <div class="project-card mb-4">
 
-            <h2>Current Progress</h2>
+            <h3>Current Progress</h3>
 
             <div class="progress-container">
 
@@ -201,32 +194,32 @@
 
                 <div class="progress-item">
                     <span>Authentication</span>
-                    <span class="done">✓ Completed</span>
+                    <span class="done"> Completed</span>
                 </div>
 
                 <div class="progress-item">
                     <span>Hotel Module</span>
-                    <span class="done">✓ Completed</span>
+                    <span class="done"> Completed</span>
                 </div>
 
                 <div class="progress-item">
                     <span>Facility Module</span>
-                    <span class="done">✓ Completed</span>
+                    <span class="done">Completed</span>
                 </div>
 
                 <div class="progress-item">
                     <span>Review Module</span>
-                    <span class="working">🔄 In Progress</span>
+                    <span class="working"> In Progress</span>
                 </div>
 
                 <div class="progress-item">
                     <span>Booking Module</span>
-                    <span class="pending">⏳ Pending</span>
+                    <span class="pending"> Pending</span>
                 </div>
 
                 <div class="progress-item">
                     <span>React Frontend</span>
-                    <span class="pending">⏳ Pending</span>
+                    <span class="pending"> Pending</span>
                 </div>
 
             </div>
@@ -238,10 +231,10 @@
 
         <div class="project-card status-card text-center">
 
-            <h2>Project Status</h2>
+            <h3>Project Status</h3>
 
             <div class="big-status">
-                🚧 In Progress
+                In Progress
             </div>
 
             <p>
@@ -280,6 +273,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
 </script>
+<script src="script.js"></script>
 
 </body>
 

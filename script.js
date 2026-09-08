@@ -1,52 +1,25 @@
-const contactForm = document.getElementById("contactForm");
+const themeToggle = document.getElementById("themeToggle");
 
-contactForm.addEventListener("submit", function (event) {
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
 
-    event.preventDefault();
-
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
-
-    const nameError = document.getElementById("nameError");
-    const emailError = document.getElementById("emailError");
-    const messageError = document.getElementById("messageError");
-    const successMessage = document.getElementById("successMessage");
-
-    nameError.textContent = "";
-    emailError.textContent = "";
-    messageError.textContent = "";
-    successMessage.textContent = "";
-
-    let isValid = true;
-
-    if (name === "") {
-        nameError.textContent = "Please enter your name.";
-        isValid = false;
+    if (themeToggle) {
+        themeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
     }
+}
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
 
-    if (email === "") {
-        emailError.textContent = "Please enter your email.";
-        isValid = false;
-    }
-    else if (!emailPattern.test(email)) {
-        emailError.textContent = "Please enter a valid email.";
-        isValid = false;
-    }
+        document.body.classList.toggle("dark-mode");
 
-    if (message === "") {
-        messageError.textContent = "Please enter your message.";
-        isValid = false;
-    }
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+            themeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+        } else {
+            localStorage.setItem("theme", "light");
+            themeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+        }
 
-    if (isValid) {
-
-        successMessage.textContent =
-            "Message sent successfully!";
-
-        contactForm.reset();
-    }
-
-});
+    });
+}
